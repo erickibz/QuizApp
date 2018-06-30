@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="4dp"
+    >
+
+<LinearLayout
+
+    android:id="@+id/ll_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="16sp"
+            android:text="Internet Security questionnaire" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="In general, how concerned are you about security on the Internet?" />
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/one_not_at_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not at all concerned "
+                android:onClick="checkbutton"/>
+            <RadioButton
+                android:id="@+id/two_littleConcerned"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A little concerned "
+                android:onClick="checkbutton"/>
+            <RadioButton
+                android:id="@+id/four_very_concerned"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Very concerned  "
+                android:onClick="checkbutton"/>
+
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-condensed"
+            android:text="How concerned are you about security in relation to making purchases or banking over the Internet?" />
+        <RadioGroup
+            android:id="@+id/radio_group2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/one_b_not_at_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not at all concerned "
+                android:onClick="checkbutton"/>
+            <RadioButton
+                android:id="@+id/two_b_littleConcerned"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A little concerned "
+                android:onClick="checkbutton"/>
+
+            <RadioButton
+                android:id="@+id/four_b_very_concerned"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Very concerned  "
+                android:onClick="checkbutton"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Would you report a security break-in of your personal machine or network?" />
+        <RadioGroup
+            android:id="@+id/radio_group3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/btn_yes1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="checkbutton"
+                android:text="yes"/>
+            <RadioButton
+                android:id="@+id/btn_no1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:onClick="checkbutton"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="raeson"/>
+
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-condensed"
+            android:text="What device do you use to access the internet?" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="smartphone"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="laptop"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+    <Button
+        android:id="@+id/btn_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:textColor="#001eff"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
